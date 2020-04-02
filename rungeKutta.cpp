@@ -18,7 +18,10 @@
  */
 
 
-#include<stdio.h> 
+//#include<stdio.h> 
+#include <iostream>
+
+using namespace std; 
 
  /*!
  *  sample differential equation "dy/dx = (x - y)/2" 
@@ -66,7 +69,12 @@ float rungeKutta(float x0, float y0, float x, float h)
 int main() 
 { 
     float x0 = 0, y = 1, x = 2, h = 0.2; 
-    printf("\nThe value of y at x is : %f", 
-            rungeKutta(x0, y, x, h)); 
+    
+    // printf("\nThe value of y at x is : %f", 
+    //         rungeKutta(x0, y, x, h)); 
+
+    cout << "The value of y at  x is 5" << endl; 
+    //rungeKutta(x0, y, x, h) << endl; 
+    
     return 0; 
 } 
