@@ -19,8 +19,13 @@
 
 
 #include<stdio.h> 
-  
-// A sample differential equation "dy/dx = (x - y)/2" 
+
+ /*!
+ *  sample differential equation "dy/dx = (x - y)/2" 
+ * inputs are scalara 
+ * 
+ */
+
 float dydx(float x, float y) 
 { 
     return((x - y)/2); 
